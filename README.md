@@ -1,4 +1,4 @@
-# gpdp2-bunsenlabs-respin
+# gps-pocket2-bunsenlabs-respin
 My ~/.config on a GPD Pocket 2 running Bunsenlabs. This lisnux distro is realy impressive and totaly fit the GPDP2.
 Fast to start, lightweight, based on a debian so all the packages on debian's repository are available.
 It's works way better than Ubuntu for me.
