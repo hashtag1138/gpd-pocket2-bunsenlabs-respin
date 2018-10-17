@@ -21,4 +21,5 @@ Don't forget the "&" at the end otherwise it'll dosesn't work.
 That's about it.
 
 Things to work on : 
-Too many :)
+Changin screen scale when the session is open is still realy buggy.
+Some time it's needed to set to 1x1 and the set to 0.4 or whatever scale you want.
