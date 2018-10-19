@@ -56,7 +56,7 @@
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
       <name>Sans</name>
-      <size>10</size>
+      <size>13</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -65,7 +65,7 @@
     </font>
     <font place="InactiveWindow">
       <name>Sans</name>
-      <size>10</size>
+      <size>13</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -74,7 +74,7 @@
     </font>
     <font place="MenuHeader">
       <name>Sans</name>
-      <size>10</size>
+      <size>13</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -83,7 +83,7 @@
     </font>
     <font place="MenuItem">
       <name>Sans</name>
-      <size>10</size>
+      <size>13</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -92,20 +92,20 @@
     </font>
     <font place="ActiveOnScreenDisplay">
       <name>Sans</name>
-      <size>10</size>
+      <size>13</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveOnScreenDisplay">
       <name>Sans</name>
-      <size>10</size>
+      <size>13</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
   </theme>
@@ -183,32 +183,20 @@
     <!-- Keybindings for desktop switching -->
     <keybind key="C-A-1">
       <action name="Execute">
-        <command>bash -c "xrandr --output eDP-1 --scale 1x1 &amp; xset dpms force off"</command>
-        <prompt>Change resolution: 1x</prompt>
+        <command>scale-screen.sh 1</command>
+        <prompt>Change resolution to 1200x1920</prompt>
       </action>
     </keybind>
     <keybind key="C-A-2">
       <action name="Execute">
-        <command>bash -c "xrandr --output eDP-1 --scale 1x1 &amp; \
-        xrandr --output eDP-1 --scale 0.8x0.8 &amp; \
-        xset dpms force off"</command>
-        <prompt>Change resolution : 0.8x</prompt>
+        <command>scale-screen.sh 2</command>
+        <prompt>Change resolution to 720x1152</prompt>
       </action>
     </keybind>
     <keybind key="C-A-3">
       <action name="Execute">
-        <command>bash -c "xrandr --output eDP-1 --scale 1x1 &amp; \
-        xrandr --output eDP-1 --scale 0.6x0.6 &amp; \
-        xset dpms force off"</command>
-        <prompt>Scale : 0.6x</prompt>
-      </action>
-    </keybind>
-    <keybind key="C-A-4">
-      <action name="Execute">
-        <command>bash -c "xrandr --output eDP-1 --scale 1x1 &amp; \
-        xrandr --output eDP-1 --scale 0.4x0.4 &amp; \
-        xset dpms force off"</command>
-        <prompt>Change resolution : 0.4x</prompt>
+        <command>scale-screen.sh 3</command>
+        <prompt>Change resolution to 480x748</prompt>
       </action>
     </keybind>
     <keybind key="C-A-Left">

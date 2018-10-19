@@ -41,9 +41,15 @@ xset r rate 250 25
 xcape -e 'Super_L=Super_L|space'
 
 ### SCREEN ORIENTATION ###
-xrandr -o right &
-xrandr --output eDP-1 --scale 0.4x0.4 &
-xinput set-prop 12 142 0 1 0 -1 0 1 0 0 1 &
+xrandr --newmode "720x1152_60.20"   69.00  720 768 840 960  1152 1155 1165 1195 -hsync +vsync 
+xrandr --addmode eDP-1 720x1152_60.20 
+
+xrandr --newmode "480x748_60.20"   29.00  480 504 552 624  748 751 761 777 -hsync +vsync 
+xrandr --addmode eDP-1 480x748_60.20 
+
+xrandr --output eDP-1 --mode 480x748_60.20 
+xrandr -o right 
+xinput set-prop 12 142 0 1 0 -1 0 1 0 0 1 
 
 
 ### TOUCHPAD: comment out the next two entries if you don't have one
